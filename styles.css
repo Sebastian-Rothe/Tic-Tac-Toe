@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+}
+h1{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+td:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Innere Border zwischen den Zellen */
+td:not(:last-child) {
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+tr:not(:last-child) td {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+.winning-line {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Stelle sicher, dass die Linie über den Symbolen liegt */
+    pointer-events: none; /* Damit die Linie keine Klicks blockiert */
+  
+}
+
+button{
+    width: 300px;
+    margin-top: 24px;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #45a049; 
+}
+
+
+
+
